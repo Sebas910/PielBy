@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumière | Cosmetología & Estética Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <nav class="fixed w-full z-50 glass-effect border-b border-beige/20 px-4 md:px-0">
+        <div class="max-w-7xl mx-auto py-4 flex justify-between items-center">
+            <div class="text-xl md:text-2xl font-bold tracking-[0.2em] serif uppercase">Lumière</div>
+            
+            <!-- Desktop Links -->
+            <div class="hidden lg:flex space-x-10 text-[11px] font-semibold uppercase tracking-widest">
+                <a href="#inicio" class="nav-link text-dark/70 hover:text-dark transition">Inicio</a>
+                <a href="#servicios" class="nav-link text-dark/70 hover:text-dark transition">Servicios</a>
+                <a href="redirect/tratamientos.html" class="nav-link text-dark/70 hover:text-dark transition">Tratamientos</a>
+                <a href="#contacto" class="nav-link text-dark/70 hover:text-dark transition">Contacto</a>
+            </div>
+
+            <button class="bg-gold-gradient text-white px-5 md:px-7 py-2 md:py-3 rounded-full text-[10px] md:text-xs font-bold uppercase tracking-widest hover:opacity-90 transition shadow-md active:scale-95">
+                Cita Online
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative min-h-[90vh] md:min-h-screen flex items-center pt-24 pb-12 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1570172619380-4101bccead93?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-[0.15]"></div>
+            <div class="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-cream via-cream/90 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="animate-fade-in text-center lg:text-left order-2 lg:order-1">
+                <span class="text-gold font-semibold tracking-[0.4em] uppercase text-[10px] md:text-xs mb-6 block">Cosmetología Avanzada</span>
+                <h1 class="text-4xl md:text-7xl mb-6 leading-[1.1] md:leading-tight">La luz de tu piel, <br class="hidden md:block"> redescubierta.</h1>
+                <p class="text-sm md:text-lg text-gray-600 mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed font-light">
+                    Protocolos exclusivos diseñados para realzar la pureza de tu rostro con ingredientes de alta gama y tecnología estética.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#servicios" class="bg-dark text-white px-10 py-5 rounded-none font-bold text-xs uppercase tracking-widest hover:bg-gold transition shadow-xl text-center">Nuestros Servicios</a>
+                    <button onclick="openSkinQuiz()" class="border border-gold text-gold px-10 py-5 rounded-none font-bold text-xs uppercase tracking-widest hover:bg-gold hover:text-white transition text-center active:bg-gold/10">Test de Piel</button>
+                </div>
+            </div>
+            
+            <div class="order-1 lg:order-2 relative px-4 md:px-0">
+                <div class="w-full h-[350px] md:h-[600px] border-[10px] md:border-[20px] border-white shadow-2xl overflow-hidden rounded-t-[100px] md:rounded-t-full">
+                    <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80" alt="Estética Facial" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 md:-bottom-10 -right-4 md:-left-10 w-32 md:w-48 h-32 md:h-48 bg-beige rounded-full flex items-center justify-center p-4 text-center shadow-xl border-4 border-white transform rotate-3">
+                    <p class="serif text-[10px] md:text-sm italic font-bold text-dark/80 tracking-tight leading-snug">"Tu belleza, nuestra ciencia."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-3xl md:text-5xl mb-6">Tratamientos <span class="italic">Signature</span></h2>
+                <div class="w-16 md:w-24 h-[1px] bg-gold mx-auto mb-8"></div>
+                <p class="text-gray-400 max-w-xl mx-auto uppercase tracking-[0.2em] text-[10px] md:text-xs">Resultados visibles desde la primera sesión</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+                <!-- Card 1 -->
+                <div class="treatment-card p-10 bg-cream rounded-3xl text-center flex flex-col items-center">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-8 shadow-sm border border-beige/50">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl mb-4 tracking-widest font-light uppercase">Deep Cleansing</h3>
+                    <p class="text-gray-500 mb-8 text-xs md:text-sm font-light leading-relaxed">Oxigenación facial completa diseñada para pieles urbanas que necesitan un respiro profundo.</p>
+                    <span class="text-gold font-bold tracking-widest">$55.00</span>
+                </div>
+
+                <!-- Card 2 (Featured) -->
+                <div class="treatment-card p-10 bg-white border-beige border rounded-3xl text-center shadow-2xl relative flex flex-col items-center md:scale-105">
+                    <div class="absolute -top-4 bg-gold text-white text-[9px] px-4 py-1 rounded-full uppercase font-bold tracking-[0.2em]">Más Solicitado</div>
+                    <div class="w-14 h-14 bg-gold-gradient rounded-full flex items-center justify-center mb-8 shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl mb-4 tracking-widest font-light uppercase">Golden Peeling</h3>
+                    <p class="text-gray-500 mb-8 text-xs md:text-sm font-light leading-relaxed">Exfoliación química controlada que elimina imperfecciones y unifica el tono facial de forma inmediata.</p>
+                    <span class="text-gold font-bold tracking-widest">$95.00</span>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="treatment-card p-10 bg-cream rounded-3xl text-center flex flex-col items-center">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-8 shadow-sm border border-beige/50">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl mb-4 tracking-widest font-light uppercase">Silk Hydration</h3>
+                    <p class="text-gray-500 mb-8 text-xs md:text-sm font-light leading-relaxed">Terapia de hidratación multicapa para una piel con efecto filtro natural y tacto aterciopelado.</p>
+                    <span class="text-gold font-bold tracking-widest">$130.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Modal (Optimizado para Mobile) -->
+    <div id="quiz-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 md:p-6">
+        <div class="absolute inset-0 bg-dark/80 backdrop-blur-md"></div>
+        <div class="relative bg-cream max-w-lg w-full rounded-[40px] overflow-hidden shadow-2xl p-8 md:p-12 border border-beige/30">
+            <button onclick="closeSkinQuiz()" class="absolute top-8 right-8 text-dark/40 hover:text-dark transition p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            
+            <div id="quiz-content" class="text-center md:text-left">
+                <h2 class="text-2xl md:text-4xl mb-4 serif font-light">Skin Ritual <br class="md:hidden"> Finder</h2>
+                <p class="text-gray-500 text-xs md:text-sm mb-10 leading-relaxed font-light uppercase tracking-widest">Identifica tus necesidades</p>
+                
+                <div class="space-y-3">
+                    <p class="text-sm font-semibold mb-4 uppercase tracking-tighter text-dark/70">¿Cuál es tu mayor preocupación hoy?</p>
+                    <button onclick="showResult('limpieza')" class="w-full text-left p-5 border border-beige hover:border-gold rounded-2xl transition hover:bg-white text-xs md:text-sm font-medium">Falta de luz y poros visibles</button>
+                    <button onclick="showResult('hidratacion')" class="w-full text-left p-5 border border-beige hover:border-gold rounded-2xl transition hover:bg-white text-xs md:text-sm font-medium">Sequedad o descamación leve</button>
+                    <button onclick="showResult('peeling')" class="w-full text-left p-5 border border-beige hover:border-gold rounded-2xl transition hover:bg-white text-xs md:text-sm font-medium">Textura irregular o manchas</button>
+                </div>
+            </div>
+
+            <div id="quiz-result" class="hidden text-center animate-fade-in pt-4">
+                <div class="text-5xl mb-6">✨</div>
+                <h2 class="text-2xl md:text-3xl mb-4 serif italic" id="result-title">Recomendación</h2>
+                <p id="result-text" class="text-gray-500 mb-10 text-sm leading-relaxed"></p>
+                <button onclick="closeSkinQuiz()" class="w-full bg-dark text-white px-8 py-4 rounded-xl font-bold uppercase tracking-widest text-[10px] active:bg-gold transition">Empezar Tratamiento</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact & Footer -->
+    <footer id="contacto" class="bg-dark text-white pt-20 pb-12">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+            <div class="lg:col-span-2">
+                <div class="text-2xl font-bold tracking-[0.3em] serif uppercase mb-8">Lumière</div>
+                <p class="text-gray-400 max-w-xs mb-10 leading-relaxed text-sm font-light">
+                    Transformando la piel a través de la excelencia y el cuidado personalizado.
+                </p>
+                <div class="flex space-x-8 text-[10px] font-bold tracking-widest uppercase">
+                    <a href="#" class="text-gold hover:text-white transition">IG</a>
+                    <a href="#" class="text-gold hover:text-white transition">WA</a>
+                    <a href="#" class="text-gold hover:text-white transition">FB</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold uppercase tracking-widest mb-6 text-gold text-xs">Consulta</h4>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">Calle Estética 45, Piso 2<br>Distrito de Lujo<br>contacto@lumiere.com</p>
+            </div>
+            <div>
+                <h4 class="font-bold uppercase tracking-widest mb-6 text-gold text-xs">Atención</h4>
+                <p class="text-gray-400 text-sm font-light leading-relaxed">Mar - Sáb: 10:00 - 20:00<br>Lunes: Citas VIP<br>Dom: Descanso</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-8 pt-12 border-t border-white/5 text-center text-[9px] text-gray-600 tracking-[0.3em] uppercase">
+            &copy; 2024 Lumière Skin Studio. Diseñado para la excelencia.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
