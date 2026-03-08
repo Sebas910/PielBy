@@ -12,6 +12,7 @@
             color: var(--color-dark);
             scroll-behavior: smooth;
             overflow-x: hidden;
+            font-size: 18px;
         }
 
         h1, h2, h3, .serif {
